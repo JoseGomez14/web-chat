@@ -62,13 +62,13 @@ $(function () {
 
         chat.append(`
         <div class="msg-area mb-2" id="${id}" style="background-color:${color}; text-align: ${align};">
-            <p class="msg"><b>${datos.nick}: </b> ${datos.msg}</p>
+            <p class="msg"><b>${datos.nick}: </b>${datos.msg}</p>
         </div>
         `);
 
         let msgTag = document.getElementById(id);
         msgTag.addEventListener("click", () => {
-            let tagText = `<p class="msg"><b>${datos.nick}: </b> ${datos.msg}</p>`
+            let tagText = `<p class="msg"><b>${datos.nick}: </b>${datos.msg}</p>`
             if (!isDecrypt) {
                 tagText = `<p class="msg"><b>${datos.nick}: </b>${decrypt(datos.msg, numbers.basic.powerMod(serverKey, privKey, P))}</p>`
             }

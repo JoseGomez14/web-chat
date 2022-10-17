@@ -1,0 +1,38 @@
+*{
+    font-size: 18px;
+}
+body{
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#content-wrap{
+    display: none;
+}
+
+#chat{
+    height: 480px;
+    overflow-y: scroll;
+}
+
+#nick-wrap{
+    width: min(800px, 95%);
+}
+.msg-area{
+    border-radius: 4px;
+}
+
+.msg{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.salir:hover{
+    cursor: pointer;
+}
+
+.enlace-salir{
+    color:#027f43;
+}
